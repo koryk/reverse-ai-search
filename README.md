@@ -3,6 +3,8 @@ Integrate AI into bash in a way you already use, with `ctrl+r` aka `reverse-ai-s
 
 Reverse AI Search provides local AI bash completion in a format you're already familiar with.
 
+
+Only works with bash currently. Zsh coming soon.
 # Use Cases
 
 ## Command creation
@@ -17,14 +19,14 @@ $ find . -name '*.yaml'
 
 ```
 (reverse-ai-search): 'suod vmi /ect/hots' sudo vim /etc/hosts
-kigu@pop-os:~/dev/zsh-ollama-autocomplete$ sudo vim /etc/hosts
+$ sudo vim /etc/hosts
 ```
 
 ## Command completion
 
 ```
 (reverse-ai-search): 'curl localhost | jq #last item in values array' curl localhost | jq '.values | last'
-kigu@pop-os:~/dev/zsh-ollama-autocomplete$ curl localhost | jq '.values | last'
+$ curl localhost | jq '.values | last'
 ```
 
 # Requirements
@@ -59,6 +61,7 @@ AISH_OLLAMA_HOST=http://localhost:11434
 ```
 
 # TODO
+- ZSH support
 - send buffer to LLM every keystroke. Otherwise is sent on function call. `AISH_STREAM_RESULTS=1`
 - incorporate the directory into the prompt
 - prompt tuning
@@ -68,3 +71,4 @@ AISH_OLLAMA_HOST=http://localhost:11434
 
 - It caches results for strings in the temp directory, so you may want to clear these for many reasons.
 - There is an attempt to rate limit the number of predictions sent to ollama per session. If you are experiencing slowness disable `AISH_STREAM_RESULTS` and use the key bind to initialize ai search.
+
