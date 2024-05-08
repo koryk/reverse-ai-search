@@ -7,7 +7,11 @@ Reverse AI Search provides local AI bash completion in a format you're already f
 Only works with bash currently. Zsh coming soon.
 # Use Cases
 
+
+![Find Pictures Example](find_pictures.gif)
+
 ## Command creation
+![Find Modified Example](examples/find_modified.gif)
 
 ```
 # find all yaml files
@@ -16,6 +20,7 @@ $ find . -name '*.yaml'
 ```
 
 ## Fix mispelling 
+![Misspell Example](misspell.gif)
 
 ```
 (reverse-ai-search): 'suod vmi /ect/hots' sudo vim /etc/hosts
