@@ -8,7 +8,7 @@ Only works with bash currently. Zsh coming soon.
 # Use Cases
 
 
-![Find Pictures Example](find_pictures.gif)
+![Find Pictures Example](examples/find_pictures.gif)
 
 ## Command creation
 ![Find Modified Example](examples/find_modified.gif)
@@ -20,7 +20,7 @@ $ find . -name '*.yaml'
 ```
 
 ## Fix mispelling 
-![Misspell Example](misspell.gif)
+![Misspell Example](examples/misspell.gif)
 
 ```
 (reverse-ai-search): 'suod vmi /ect/hots' sudo vim /etc/hosts
