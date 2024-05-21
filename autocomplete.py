@@ -14,8 +14,8 @@ Your commands must be surrounded by ```
   
 suggest:
 ```
-find . -type f \( -iname "*.mp4" -o -iname "*.avi" -o -iname "*.mov" \) 2>/dev/null
-find . -type f -regex ".*\.\(mp4\|avi\|mov\)$" 2>/dev/null
+find . -type f \\( -iname "*.mp4" -o -iname "*.avi" -o -iname "*.mov" \\) 2>/dev/null
+find . -type f -regex ".*\\.\\(mp4\\|avi\\|mov\\)$" 2>/dev/null
 find . -type f -name "*.*" -exec file {} + | grep -i "video"
 ```
 
