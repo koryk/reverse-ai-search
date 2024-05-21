@@ -40,12 +40,14 @@ $ curl localhost | jq '.values | last'
 - python3
 
 # zsh - add to .zshrc
+```
 export AISH_TEMP_DIR="/tmp/reverse_ai_search"
 export AISH_PATH="/path/to/git/repo"
 export AISH_HOTKEY=${AISH_HOTKEY:-$'\C-o'}
 source $AISH_PATH/autocomplete.zsh
 zle -N reverse_ai_search
 bindkey '^O' reverse_ai_search
+```
 
 # Bash - Add to .bashrc 
 
